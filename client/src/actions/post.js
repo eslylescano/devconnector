@@ -115,6 +115,7 @@ export const getPost = id => async dispatch => {
       payload: res.data
     });
   } catch (err) {
+    console.log(err);
     dispatch({
       type: POST_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status }
@@ -160,7 +161,7 @@ export const deleteComment = (postId, commentId) => async dispatch => {
       payload: commentId
     });
 
-    dispatch(setAlert("Comment Added", "success"));
+    dispatch(setAlert("Comment Removed", "success"));
   } catch (err) {
     dispatch({
       type: POST_ERROR,
