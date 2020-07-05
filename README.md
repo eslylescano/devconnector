@@ -6,16 +6,7 @@ This is a MERN stack application. It is a small social network app that includes
 
 ## Quick Start
 
-```
-# change default.json file in config folder
 
-# this file is located in config/default.json
-
-# add uri of your mongodb connection for example
-
- "mongoURI": "mongodb://localhost/dev-social",
- 
-```
 
 ```bash
 # Install server dependencies
